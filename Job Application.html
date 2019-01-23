@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>Aplicant forms</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content ="width=device-width, initial-scale=1">
+</head>
+<style> 
+
+	#head{
+		font-size: 400%;
+		color:rgb(161, 171, 201);
+	}
+
+	#head1{	
+		font-size: 200%;
+		color:#4169E1;
+		text-decoration:underline;
+	}
+	.body{
+		text-align: center;
+	
+		background-color:lightgray;
+	}
+
+	label{ 
+		color:#4169E1;
+		font-weight: bold;
+		font-size: 100%;
+		margin-right: 30px;
+
+		 }
+
+
+		input, select{ 
+			width: 200px;
+			height: 30px;
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box; 
+		}
+
+	input [type="text"], input[type="number"], input[type="email"], input[type="date"], input[type="file"], textarea {width: 15em; padding: 10px; margin: 10px 10px 10px 0px; vertical-align: middle; border-radius: 7px;background-color:#E0FFFF;}
+
+
+	input[type="text"]{width: 12em; padding: 15px; margin:10px 10px 10px 0px; vertical-align: middle;border-radius:7px; background-color: #E0FFFF;}
+
+	button, input{
+		background-color: #FF0000;
+		border-radius: 8px;
+		margin: 10px;
+		cursor: pointer;
+	}
+
+	button:hover, input[type="submit"]:hover{
+		border:2px solid green;
+	}
+
+	button:active, input[type="submit"]:active{
+		background-color:green;
+	}
+
+	input:focus{
+		background-color: green;
+	}
+
+	input:active{
+		background-color: orange;
+	}
+
+
+	input:required{
+		border:2px solid red;
+	}
+
+
+
+
+label{display: inline-block;}
+input[type="text"]{width: 20%;}
+label{
+	width: 10em;
+	display: inline-block;}
+
+#img1{ width: 20%;
+		height: 20%;
+		margin: right;
+		
+		}
+
+		#img2{ width: 20%;
+		height: 20%;
+		margin: right;
+		
+		}
+</style>
+
+
+
+
+
+<body>
+
+
+<!-- id is to unique this form for the latest buidling CSS style. method is to 'get' or 'post' / action "URL" where you want yoor data to be sent to -->
+<form id="Applicant Data" method="post" action="">
+
+<!-- elements to select information / input element is an empty element that's why you did not a closing tag / name you can consider it as the name of the column in any data and it is not showed to the end user    -->
+<!-- label element is the part that tell the user what to fill in the field / For="Name" to help people using screen reader or any assetive tecnology to read the screen between "" should be like the id  /multiple="" to make the user able to add more than input  
+	<img src="call center girle agent.jpg" alt="call center boy agent" width:2%, height:2%>
+	<img src="call center boy agent.jpg" 	alt="call center boy agent" width:2%, height:2%,>
+
+-->
+<img src="call center girle agent.jpg" alt="call center boy agent" id="img1">
+<img src="call center boy agent.jpg" 	alt="call center boy agent" id="img2">
+	<h1 id="head">Perfect Transit Careers</h1>
+	<h2 id="head1">Please fill in the form below</h2>
+	<label for ="Name">Name*</label>
+	<input type="text" name="Name" id = "Name"required aria-required="true"><br> <br> <br>
+
+	<label for="mobile number">Mobile*</label>
+	<input type="number" name="mobile number" id="mobile number" min="11" max="11" required aria-required="true"><br> <br><br>
+
+	<label for="email">Email*</label>
+	<input type="email" name="email" id="email" multiple required aria-required="true"><br><br><br>
+
+	<label for="University">University*</label>
+	<input type="text" name="University" id="University" required aria-required="true"><br><br><br>
+
+	<label for="birth date">Birth Date*</label>
+	<input type="date" name="birth date" id="birth date" required aria-required="true"><br><br><br>
+
+
+	<label for="How did you hear about this vacancy*">How did you hear about this vacancy *</label><br>
+	<select name="How did you hear about this vacancy *" id="Graduation Year" required aria-required="true">
+		<option value="select">select</option>
+		<option value="Social Media">Social Media</option>
+		<option value="a friend">a friend</option>
+		<option value="Others">Others</option>
+
+	</select><br> <br><br>
+
+	<label for="CV">Upload your CV Please</label><br>
+	<input type="file" name="CV" id="CV" accepet="image/*,PDF,Word"><br><br><br>
+<div class="button">	
+		<input type="submit">
+    	<button>Back</button>
+</div>
+
+</form>
+
+</body>
+</html>
